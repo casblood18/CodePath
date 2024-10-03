@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 - [X] **The web app displays at least five list items, each with at least three attributes (such as title, text, and image url)**
 - [X] **The user can click on each item in the list to see a detailed view of it, including all database fields**
   - [X] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [ ] **The web app serves an appropriate 404 page when no matching route is defined**
+- [X] **The web app serves an appropriate 404 page when no matching route is defined**
 - [ ] **The web app is appropriately styled using Picocss**
 
 The following **optional** features are implemented:
@@ -25,7 +25,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you added to improve the site's functionality!
+- [X] List anything else that you added to improve the site's functionality!
+I looked up the parallax scrolling and implemented that into this website
 
 ## Video Walkthrough
 
@@ -45,7 +46,7 @@ GIF created with ...  Licecap
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
-I wasn't too sure on how to implement the html and although I added picocss, I didn't use it too much.
+Everything was just a learning experience, just learned while doing!
 
 ## License
 
