@@ -1,8 +1,4 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
-const port = process.env.PORT || 3000;
-
+/*
 const items = [
   { 
       id: 1, 
@@ -45,14 +41,22 @@ const items = [
       location: 'East Pier on the Beach (Summer)'
   }
 ];
+*/
+
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const port = process.env.PORT || 3000;
+const db = require('./config/db');
+require('dotenv').config();
 
 app.use(express.static('public'));
 app.use(cors());
 
 app.get('/cards', async (req, res) => {
   try {
-    const result = items;
-    res.json(result);
+    const result = await db.query("SELECT * FROM fish");
+    res.json(result.rows);
   } catch (error) {
     console.error('Error fetching cards from database:', error);
     res.status(500).json({ error: 'Internal Server Error' });
