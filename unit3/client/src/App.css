@@ -1,0 +1,32 @@
+@font-face {
+    font-family: stardew;
+    src: url(/client/src/assets/Stardew_font.ttf);
+  }
+
+header {
+    padding: 50px;
+    display: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header {
+    font-family: 'stardew' !important;
+    height: 30vh;
+    width: 70vw;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+}
+
+.header-buttons {
+    margin: 5%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-buttons button {
+    margin-right: 20px;
+    margin-left: 20px;
+}
